@@ -233,7 +233,7 @@ function generatePdf() {
   const deviceSerialNumberLabel = "        Device Serial Number: ";
   const deviceSerialNumberUnderline = deviceSerialNumber;
 
-  const centerText = `Computer repairs not covered under warranty will be charged a $25 diagnostic fee, and an additional $150 if the problem can be fixed in one hour. If the repair will exceed one hour, an estimate will be created and the customer will be notified of the estimated cost to complete the repair. Should the customer choose not to continue with the repair the $25 diagnostic fee still applies. All work will be at a rate of $150/hour. Network Computer Solutions is not responsible for any loss of data. By signing this form the customer agrees to pay all applicable fees before computer being returned. All merchandise must be picked up within 30-days of notification. All fees will be paid in full before merchandise is released. All merchandise left after 30-days will be considered abandoned and disposed of at the company's discretion. Disposal fees can be charged back to the customer.`;
+  const centerText = `Computer repairs not covered under warranty will be charged a $25 diagnostic fee, and an additional $150 if the problem can be fixed in one hour. If the repair will exceed one hour, an estimate will be created and the customer will be notified of the estimated cost to complete the repair. Should the customer choose not to continue with the repair the $25 diagnostic fee still applies. All work will be at a rate of $150/hour. YOUR COMPANY HERE Solutions is not responsible for any loss of data. By signing this form the customer agrees to pay all applicable fees before computer being returned. All merchandise must be picked up within 30-days of notification. All fees will be paid in full before merchandise is released. All merchandise left after 30-days will be considered abandoned and disposed of at the company's discretion. Disposal fees can be charged back to the customer.`;
 
   //const signatureAndDate = 'Client Signature ____________________________   Date ______________________';
 
@@ -426,15 +426,18 @@ const customerData = {
     };
   
 jsonCustomerData = JSON.stringify(customerData);
-
-    // Code to create a new account goes here
+    
+  /*
+    // Code to create a new Microsoft Dynamix account goes here
     const xhr = new XMLHttpRequest();
     const url =
       "https://prod-129.westus.logic.azure.com/workflows/9552a9ca3016499aadf0994daabd614b/triggers/manual/paths/invoke/testPathForJSON?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=88lTm-Y7YmBjm8UmFKvyMXJtJWztfK-af3pmGDJYmIY";
 
     xhr.open("POST", url, true);
     xhr.setRequestHeader("Content-Type", "application/json");
-    xhr.send(jsonCustomerData);//
+    xhr.send(jsonCustomerData);
+    */
+    
     console.log("Success: new account created", jsonCustomerData);
 
   newDeviceDiv.classList.remove("hidden");
