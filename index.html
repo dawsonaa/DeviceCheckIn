@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Information Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form id="customer-form">
+    <fieldset>
+      <div id="new-customer" class="customer">
+        <b>Customer information</b><br></br>
+        <table>
+          <tr>
+            <td><label for="first-name">*First name:</label></td>
+            <td><input type="text" id="first-name" name="first-name" required inputmode="text"></td>
+          </tr>
+          <tr>
+            <td><label for="last-name">*Last name:</label></td>
+            <td><input type="text" id="last-name" name="last-name" required></td>
+          </tr>
+          <tr>
+            <td><label for="email">*Email:</label></td>
+            <td><input type="email" id="email" name="email" required></td>
+          </tr>
+          <tr>
+            <td><label for="phone">*Phone:</label></td>
+            <td><input type="tel" id="phone" name="phone" required pattern="^[0-9]{3}-[0-9]{3}-[0-9]{4}$"></td>
+          </tr>
+          <tr>
+            <td><label for="address">*Address:</label></td>
+            <td><textarea type="address" id="address" name="address" rows="3" required></textarea></td>
+          </tr>
+        </table>
+    <button type="submit" id="submit-button">Submit</button>
+      </div>
+    
+      <div id="new-device" class="device">
+        <b>Device information</b><br></br>
+        <table>
+          <tr>
+            <td><label for="device-make-1">*Make:</label></td>
+            <td><input type="make" id="device-make-1" name="device-make-1" required></td>
+          </tr>
+          <tr>
+            <td><label for="device-serial-1">*Serial Number:</label></td>
+            <td><input type="serial" id="device-serial-1" name="device-serial-1" required></td>
+          </tr>
+          <tr>
+            <td><label for="device-model-1">Model:</label></td>
+            <td><input type="model" id="device-model-1" name="device-model-1"></td>
+          </tr>
+          <tr>
+            <td><label for="device-username-1">Username:</label></td>
+            <td><input id="device-username-1" name="device-username-1"></td>
+          </tr>
+          <tr>
+            <td><label for="device-password-1">Password:</label></td>
+            <td><input id="device-password-1" name="device-password-1"></td>
+          </tr>
+          <tr>
+            <td><label for="device-summary-1">*Device Symptoms Summary:</label></td>
+            <td><textarea rows="5" type="summary" id="device-summary-1" name="device-summary-1" required></textarea></td>
+          </tr>
+        </table>
+      </div>
+  </fieldset>
+
+      <div id="submit-Summary" class="customer hidden">
+  <label for="customer-information"><u>New Account Information Summary</u></label>
+  <div id="customer-url" class="hidden">
+    <span></span>
+  </div>
+  <div id="customer-name">
+    <span id="customer-first-name"></span>
+    <span id="customer-last-name"></span>
+  </div> <br>
+  <div id="customer-email">
+    <span></span>
+  </div> <br>
+  <div id="customer-phone">
+    <span></span>
+  </div> <br>
+  <div id="customer-address">
+    <span></span>
+  </div> <br><br>
+  <label for="customer-information"><u>New Device Information Summary</u></label>
+  <div id="customer-device">
+    <div id="customer-device-make">
+      <span></span>
+    </div> <br>
+    <div id="customer-device-serial">
+      <span></span>
+    </div> <br>
+    <div id="customer-device-model">
+      <span></span>
+      <br>
+    </div> 
+    <div id="customer-device-username">
+      <span></span>
+      <br>
+    </div> 
+    <div id="customer-device-password">
+      <span></span>
+      <br>
+    </div> 
+    <div id="customer-device-summary">
+      <span></span>
+    </div>
+  </div> <br><br>
+  <div><b><u>Please read:</u></b></div>
+  <div>Computer repairs not covered under warranty will be charged a <b>$25 diagnostic fee</b>, and an <b>additional
+      $150 if the problem can be fixed in one hour</b>. If the repair will exceed one hour, an estimate will be
+    created and the customer will be notified of the estimated cost to complete the repair. <b>Should the
+      customer choose not to continue with the repair the $25 diagnostic fee still applies</b>. All work will be at a
+    rate of $150/hour. Network Computer Solutions is not responsible for any loss of data. <b>By signing this
+      form the customer agrees to pay all applicable fees before computer being returned.</b> All merchandise
+    must be picked up within 30-days of notification. All fees will be paid in full before merchandise is
+    released. All merchandise left after 30-days will be considered abandoned and disposed of at the
+    company's discretion. Disposal fees can be charged back to the customer.
+  </div> <br><br>
+  <div> <b>Please sign below:</b> </div> <br>
+  <div>
+    <canvas id="signature-pad" width="600" height="150" style="border: 2px solid black;"></canvas>
+  </div>
+  <button type="confirmSubmit" id="confirmSubmit-button" class="hidden">Confirm Submission</button>
+  <button type="declineSubmit" id="declineSubmit-button">Go back</button>
+</div>
+
+
+</form>
+<!--
+<script>
+      window.onload = function() {
+        document.getElementById('first-name').focus();
+      };
+    </script> -->
+</body>
+</html>
