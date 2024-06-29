@@ -1,0 +1,128 @@
+body,
+html {
+  font-family: Arial, sans-serif;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+form {
+  /*max-width: 1920px;*/
+  margin: 0;
+  padding: 20px;
+  height: 100%;
+  margin: 0;
+  border: none;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+fieldset input,
+textarea {
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  align-items: center;
+  text-align: center;
+  border: 2px solid #000000;
+  border-radius: 0px;
+  margin-bottom: 15px;
+}
+
+/* Styles for device fields */
+fieldset {
+  border: none;
+  padding: 0;
+  margin-top: 20px;
+  text-align: center; /* aligns child elements to the center */
+}
+
+
+fieldset div {
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: top;
+} 
+
+fieldset label {
+  margin-bottom: 5px;
+}
+
+.customer, .device {
+  border: 2px solid #000000;
+  padding: 10px;
+  vertical-align: top;
+  text-align: center;
+  width: 45%;
+  margin: 0;
+}
+
+.customer:last-child, .device:last-child {
+  margin-right: 0;
+}
+
+#add-device-btn,
+#submit-button,
+#confirmSubmit-button,
+#declineSubmit-button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 13.5px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#submit-button,
+#confirmSubmit-button {
+  background-color: #549c30;
+  margin-bottom: 15px;
+}
+#declineSubmit-button {
+  background-color: red;
+  margin-bottom: 15px;
+}
+
+textarea {
+  height: auto;
+  width: 100%;
+  background-color: transparent;
+}
+
+.hidden {
+  display: none;
+}
+
+table {
+  margin: 0 auto;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  width: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  .customer, .device {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+#submit-Summary{
+  width: 100%;
+}
+
+
