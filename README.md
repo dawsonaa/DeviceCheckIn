@@ -1,6 +1,6 @@
 # IT Device Check-in Form JavaScript Application
 
-Program can be accessed here: https://dawsonaa.github.io/IT-Device-Check-in-Form/
+Demo the program here: https://dawsonaa.github.io/IT-Device-Check-in-Form/
 
 This JavaScript application facilitates the check-in process for IT devices, originally designed to integrate with Microsoft Dynamics and Power Automate. It allows users to submit customer and device information. Upon submission, it generates a PDF report that summarizes the entered details. The application includes features for form validation, signature capture, and dynamic updating of customer and device information on the form.
 
