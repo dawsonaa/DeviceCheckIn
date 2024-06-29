@@ -431,7 +431,7 @@ jsonCustomerData = JSON.stringify(customerData);
     // Code to create a new Microsoft Dynamix account goes here
     const xhr = new XMLHttpRequest();
     const url =
-      "https://prod-129.westus.logic.azure.com/workflows/9552a9ca3016499aadf0994daabd614b/triggers/manual/paths/invoke/testPathForJSON?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=88lTm-Y7YmBjm8UmFKvyMXJtJWztfK-af3pmGDJYmIY";
+      "https://prod-129.westus.logic.azure.com/workflows/................... Replace with Power Automate manual call link";
 
     xhr.open("POST", url, true);
     xhr.setRequestHeader("Content-Type", "application/json");
